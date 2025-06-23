@@ -156,75 +156,75 @@
 // })
 // console.log(value)
 
-// const products = [
-//   { name: "T-shirt", price: 500 },
-//   { name: "Shoes", price: 1500 },
-//   { name: "Cap", price: 200 },
-// ];
+// // const products = [
+// //   { name: "T-shirt", price: 500 },
+// //   { name: "Shoes", price: 1500 },
+// //   { name: "Cap", price: 200 },
+// // ];
 
-// filter by price
-//price low to high
+// // filter by price
+// //price low to high
 
-// let sortedArray = products.sort((a , b)=>a.price -b.price) // product assednding in a accesnding order....
-// let decessdingorder = products.sort((a , b)=>b.price - a.price) // product shown in a decesnding order....
-// console.log(decessdingorder)
-// console.log(sortedArray)
+// // let sortedArray = products.sort((a , b)=>a.price -b.price) // product assednding in a accesnding order....
+// // let decessdingorder = products.sort((a , b)=>b.price - a.price) // product shown in a decesnding order....
+// // console.log(decessdingorder)
+// // console.log(sortedArray)
 
 
-const product = [
-  {
-    "id": 1,
-    "name": "T-shirt",
-    "category": "Clothing",
-    "price": 500
-  },
-  {
-    "id": 2,
-    "name": "Jeans",
-    "category": "Clothing",
-    "price": 1200
-  },
-  {
-    "id": 3,
-    "name": "Laptop",
-    "category": "Electronics",
-    "price": 55000
-  },
-  {
-    "id": 4,
-    "name": "Mobile Phone",
-    "category": "Electronics",
-    "price": 25000
-  },
-  {
-    "id": 5,
-    "name": "Wrist Watch",
-    "category": "Accessories",
-    "price": 2500
-  },
-  {
-    "id": 6,
-    "name": "Sneakers",
-    "category": "Footwear",
-    "price": 3000
-  },
-  {
-    "id": 7,
-    "name": "Sandals",
-    "category": "Footwear",
-    "price": 1000
-  }
-]
+// const product = [
+//   {
+//     "id": 1,
+//     "name": "T-shirt",
+//     "category": "Clothing",
+//     "price": 500
+//   },
+//   {
+//     "id": 2,
+//     "name": "Jeans",
+//     "category": "Clothing",
+//     "price": 1200
+//   },
+//   {
+//     "id": 3,
+//     "name": "Laptop",
+//     "category": "Electronics",
+//     "price": 55000
+//   },
+//   {
+//     "id": 4,
+//     "name": "Mobile Phone",
+//     "category": "Electronics",
+//     "price": 25000
+//   },
+//   {
+//     "id": 5,
+//     "name": "Wrist Watch",
+//     "category": "Accessories",
+//     "price": 2500
+//   },
+//   {
+//     "id": 6,
+//     "name": "Sneakers",
+//     "category": "Footwear",
+//     "price": 3000
+//   },
+//   {
+//     "id": 7,
+//     "name": "Sandals",
+//     "category": "Footwear",
+//     "price": 1000
+//   }
+// ]
 
-let narr = product.filter((ele)=>{
-    return ele.category == "Clothing"
-})
+// let narr = product.filter((ele)=>{
+//     return ele.category == "Clothing"
+// })
 
-// sorting by price high to low
+// // sorting by price high to low
 
-let accendingPrice = narr.sort((a , b)=>b.price-a.price)
-console.log(accendingPrice)
-let arr  = narr.reduce((acc  , curr)=>{
-return acc + curr.price
-},0)
-console.log(arr)
+// let accendingPrice = narr.sort((a , b)=>b.price-a.price)
+// console.log(accendingPrice)
+// let arr  = narr.reduce((acc  , curr)=>{
+// return acc + curr.price
+// },0)
+// console.log(arr)
