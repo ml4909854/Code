@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popup Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #2874f0;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  min-width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup input {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 8px;
+}
+
+</style>
+<body>
+  <nav class="navbar">
+    <h2>MyShop</h2>
+    
+    <button id="loginBtn">Login</button>
+
+  </nav>
+
+  <div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque sit cupiditate corrupti, nihil eaque quaerat exercitationem iusto dolorum eveniet, nesciunt, hic necessitatibus temporibus et voluptatum nulla veritatis quis voluptatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur harum temporibus explicabo ducimus modi delectus accusamus quod quisquam molestiae! Adipisci, aliquam aut illo fuga possimus voluptates ullam velit molestias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit dolor in nemo quisquam, aperiam mollitia magni, neque, doloremque temporibus illum repudiandae sapiente architecto expedita? Tempora doloremque dolorum repudiandae reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque sit cupiditate corrupti, nihil eaque quaerat exercitationem iusto dolorum eveniet, nesciunt, hic necessitatibus temporibus et voluptatum nulla veritatis quis voluptatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur harum temporibus explicabo ducimus modi delectus accusamus quod quisquam molestiae! Adipisci, aliquam aut illo fuga possimus voluptates ullam velit molestias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit dolor in nemo quisquam, aperiam mollitia magni, neque, doloremque temporibus illum repudiandae sapiente architecto expedita? Tempora doloremque dolorum repudiandae reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque sit cupiditate corrupti, nihil eaque quaerat exercitationem iusto dolorum eveniet, nesciunt, hic necessitatibus temporibus et voluptatum nulla veritatis quis voluptatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur harum temporibus explicabo ducimus modi delectus accusamus quod quisquam molestiae! Adipisci, aliquam aut illo fuga possimus voluptates ullam velit molestias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit dolor in nemo quisquam, aperiam mollitia magni, neque, doloremque temporibus illum repudiandae sapiente architecto expedita? Tempora doloremque dolorum repudiandae reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque sit cupiditate corrupti, nihil eaque quaerat exercitationem iusto dolorum eveniet, nesciunt, hic necessitatibus temporibus et voluptatum nulla veritatis quis voluptatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur harum temporibus explicabo ducimus modi delectus accusamus quod quisquam molestiae! Adipisci, aliquam aut illo fuga possimus voluptates ullam velit molestias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit dolor in nemo quisquam, aperiam mollitia magni, neque, doloremque temporibus illum repudiandae sapiente architecto expedita? Tempora doloremque dolorum repudiandae reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque sit cupiditate corrupti, nihil eaque quaerat exercitationem iusto dolorum eveniet, nesciunt, hic necessitatibus temporibus et voluptatum nulla veritatis quis voluptatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur harum temporibus explicabo ducimus modi delectus accusamus quod quisquam molestiae! Adipisci, aliquam aut illo fuga possimus voluptates ullam velit molestias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit dolor in nemo quisquam, aperiam mollitia magni, neque, doloremque temporibus illum repudiandae sapiente architecto expedita? Tempora doloremque dolorum repudiandae reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque sit cupiditate corrupti, nihil eaque quaerat exercitationem iusto dolorum eveniet, nesciunt, hic necessitatibus temporibus et voluptatum nulla veritatis quis voluptatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur harum temporibus explicabo ducimus modi delectus accusamus quod quisquam molestiae! Adipisci, aliquam aut illo fuga possimus voluptates ullam velit molestias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit dolor in nemo quisquam, aperiam mollitia magni, neque, doloremque temporibus illum repudiandae sapiente architecto expedita? Tempora doloremque dolorum repudiandae reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque sit cupiditate corrupti, nihil eaque quaerat exercitationem iusto dolorum eveniet, nesciunt, hic necessitatibus temporibus et voluptatum nulla veritatis quis voluptatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur harum temporibus explicabo ducimus modi delectus accusamus quod quisquam molestiae! Adipisci, aliquam aut illo fuga possimus voluptates ullam velit molestias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit dolor in nemo quisquam, aperiam mollitia magni, neque, doloremque temporibus illum repudiandae sapiente architecto expedita? Tempora doloremque dolorum repudiandae reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia doloremque sit cupiditate corrupti, nihil eaque quaerat exercitationem iusto dolorum eveniet, nesciunt, hic necessitatibus temporibus et voluptatum nulla veritatis quis voluptatibus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur harum temporibus explicabo ducimus modi delectus accusamus quod quisquam molestiae! Adipisci, aliquam aut illo fuga possimus voluptates ullam velit molestias.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit dolor in nemo quisquam, aperiam mollitia magni, neque, doloremque temporibus illum repudiandae sapiente architecto expedita? Tempora doloremque dolorum repudiandae reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit dolor in nemo quisquam, aperiam mollitia magni, neque, doloremque temporibus illum repudiandae sapiente architecto expedita? Tempora doloremque dolorum repudiandae reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit dolor in nemo quisquam, aperiam mollitia magni, neque, doloremque temporibus illum repudiandae sapiente architecto expedita? Tempora doloremque dolorum repudiandae reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit dolor in nemo quisquam, aperiam mollitia magni, neque, doloremque temporibus illum repudiandae sapiente architecto expedita? Tempora doloremque dolorum repudiandae reprehenderit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit dolor in nemo quisquam, aperiam mollitia magni, neque, doloremque temporibus illum repudiandae sapiente architecto expedita? Tempora doloremque dolorum repudiandae reprehenderit.
+    </div>
+  </div>
+  <!-- Popup Login Form -->
+  <div id="popupOverlay" class="overlay">
+    <div class="popup">
+      <h3>Login</h3>
+      <input type="text" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button>Submit</button>
+    </div>
+  </div>
+
+  <script>
+    const loginBtn = document.getElementById("loginBtn");
+const popupOverlay = document.getElementById("popupOverlay");
+
+loginBtn.addEventListener("click", () => {
+  popupOverlay.style.display = "flex";
+});
+
+// popupOverlay.addEventListener("click", (e) => {
+//   if (e.target === popupOverlay) {
+//     popupOverlay.style.display = "none";
+//   }
+// });
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    popupOverlay.style.display = "flex";
+  }
+});
+
+
+  </script>
+</body>
+</html>
