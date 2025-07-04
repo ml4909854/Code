@@ -6,10 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hii</h1>
     
-    <script src="promise.js">
-        
+    <!-- here we are learn a very important topic -->
+     <!--  now we are here to learn a debouncing. first -->
+    <!-- what is the deboucing. In which call a api with some timeout. after a 5 second will all
+     a api when user start toping after 2 sec our three sec a api will call
+      -->
+    
+      <input type="text" placeholder="search by title" id="searchInput" >
+
+    <script>
+       let timer;
+       document.getElementById("searchInput").addEventListener("input" , (event)=>{
+           clearTimeout(timer)
+           timer = setTimeout(() => {
+            // this is the code of deboucing. Means after a someTime 
+            // after some timout the code is run.
+               searchInput(event.target.value)
+          }, 3000);
+       })
+
+       // here is the debouncing role come.
+
+       function searchInput(query){
+        console.log("making api call" , query)
+       }
     </script>
 </body>
 </html>

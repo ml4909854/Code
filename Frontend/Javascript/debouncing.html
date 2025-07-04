@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search by Title</title>
+</head>
+
+<body>
+    <input type="text" placeholder="search by title" id="searchInput">
+    <div id="container"></div>
+</body>
+
+<script>
+    let searchInput = document.getElementById("searchInput");
+    let container = document.getElementById("container");
+
+    async function getData() {
+        try {
+            let response = await fetch("https://jsonplaceholder.typicode.com/posts");
+            let data = await response.json();
+            showdata(data);
+            searchFilter(data);
+        } catch (error) {
+            console.log("error to get data", error);
+        }
+    }
+
+    function searchFilter(data) {
+        let timer;
+        searchInput.addEventListener("input", (e) => {
+            let searchTerm = e.target.value.toLowerCase();
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                const filterData = data.filter((ele) =>
+                    ele.title.toLowerCase().includes(searchTerm)
+                );
+                showdata(filterData);
+            }, 500); // 500ms delay (you can change it to 2000 if you want)
+        });
+    }
+
+    function showdata(products) {
+        container.innerHTML = "";
+        products.forEach(element => {
+            let para = document.createElement("p");
+            para.innerHTML = element.title;
+            container.append(para);
+        });
+    }
+
+    getData();
+</script>
+
+</html>
