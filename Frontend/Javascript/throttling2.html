@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throttling second page.</title>
+</head>
+
+<body>
+    <style>
+        .div {
+            height: 6000px;
+        }
+    </style>
+    <!-- how to scroll a less behaveioy
+     when user scroll how to call our componet in a less time
+     to how i moved to the society -->
+    <div class="div">
+
+    </div>
+
+</body>
+<script>
+
+    let previousTime = 0
+    window.addEventListener("scroll", () => {
+        // how many times the funtion is scrolled. so how i overtaking
+        // this behaviour.
+        let now = Date.now()
+     let value = now-previousTime >=1000
+        if(now - previousTime >= 1000){
+            printData()
+            previousTime = now // before my funtinal called more than 100times but after use this funitonality
+            // my funiton only call 6 times.
+        }
+    })
+
+    function printData(){
+        console.log("data is printed. after a every one second, when user regulary scroll the page....")
+    }
+</script>
+
+</html>

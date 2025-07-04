@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throttling </title>
+</head>
+<body>
+   <button id="btn"> Buy</button>
+</body>
+<script>
+    // we have a button. how many times user click on a button
+    // they have a when user uy some items they are a calling
+    // click contirnousely. they are crash you server. So on that
+    // case what you do you can do some timeout after a some 
+    // delay we will call a funtion
+
+    let click = true
+    let timer;
+    document.getElementById("btn").addEventListener("click" , ()=>{
+
+        if(click){ 
+            console.log("button is clicked")
+            click = false   
+            clearTimeout(timer)
+            timer = setTimeout(() => {
+                click = true
+            }, 1000);
+            // now we are continously click a button
+            // we are decrase the load of our website
+            // becauase when i click on a button we 
+            // are call a funtion multiple times.
+            // button we apply this code
+            // we are decrease the clickable action of the 
+            // user.
+            // after false the button not click again
+            // now we will never allow to users to click after a some times
+        }
+    })
+</script>
+</html>
